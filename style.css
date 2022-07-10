@@ -1,0 +1,158 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of reset*/
+
+
+body{
+    background-color: #F9FAFB;
+    font-family: Heebo;
+}
+
+/*Banner and logo*/
+.section-one .logo-container{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container #bg-image{
+    width: 100vw;
+    height: 25vh;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.logo-container #odin-logo{
+    width: 30vw;
+    position: absolute;
+}
+
+/*The odin text next to the logo will not show up on mobile devices*/
+.logo-container #logo-text{
+    display: none; 
+}
+
+.logo-container .image-credit{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+/*Section two- the form and sign-up button*/
+
+/*The introductory paragraph will be visible for pc users or users with
+devices with bigger screen, but not for mobile users*/
+
+.section-two .introduction{
+    display: none;
+}
+
+.section-two .introduction .introduction-par-1{
+}
+
+.section-two .introduction .introduction-par-2{
+    margin-top: 15px;
+}
+
+.section-two .form-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container div{
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.form-container div input{
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.form-container div input:focus{
+    border: 2px solid rgb(136, 136, 230);
+    box-shadow: 1px 1px rgb(129, 125, 125);
+}
+
+.form-container .sign-up-log-in{
+    margin-top: -15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-container .sign-up-log-in button{
+    padding: 20px;
+    background-color: #596D48;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.form-container .sign-up-log-in span{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 29px;   
+}
+
+.form-container .sign-up-log-in span a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
