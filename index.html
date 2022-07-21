@@ -14,30 +14,28 @@
 </head>
 <body>
     <div class="section-container">
-        <div class="section-one">
+        <div class="left-section">
+            <img src="background-image.jpg" alt="A background-image" id="bg-image">
+
             <div class="logo-container">
-                <img src="background-image.jpg" alt="A background-image" id="bg-image">
                 <img src="odin-logo.png" alt="logo" id="odin-logo">
-                <h1 id="logo-text">Odin</h1>
-
-                <p class="image-credit">
-                    Photo by Halie West on Unsplash
-                </p>        
+                <h1 id="logo-text">Odin</h1>    
             </div>
-
+            <div class="image-credit">
+                Photo by <span><a href="https://unsplash.com/@haliewestphoto" >Halie West</a> </span> on <span><a href="https://unsplash.com">Unsplash</a></span>
+            </div>        
         </div>
-
-        <div class="section-two">
+        <div class="right-section">
             <div class="introduction">
                 <p class="introduction-par">This is not a real online service! You know you need 
                 something like this in your life to help you realise your 
-                deepest dreams. Sign up <i>now</i>  to get started.</p> 
+                deepest dreams. <br> Sign up <i>now</i>  to get started.</p> 
                 <p class="introduction-par-2">You <i>know</i> you want to.</p>
             </div>
 
 
             <div class="form-container">
-                <!-- <p>Let's do this!</p> -->
+                <p>Let's do this!</p>
                 <form action="" method="get" id="signUpForm">
                     <div class="first-name-container">
                         <label for="firstName">First name</label>
@@ -70,7 +68,7 @@
                     </div>
                 </form>
 
-                <div class="sign-up-log-in">
+                <div class="sign-up-log-in-section">
                     <button type="submit" form="signUpForm" id="createAccBtn">Create Account</button>
                     <span>Already have an account? <a href="">Log in.</a></span>    
                 </div>    

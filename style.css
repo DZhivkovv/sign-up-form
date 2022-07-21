@@ -45,13 +45,20 @@ table {
 /*End of reset*/
 
 
+/*The font that will be used for the text next to the logo*/
+@font-face {
+    font-family: nordic-font;
+    src: url(font-norse-bold/norse-bold-webfont.woff);
+}
+
+
 body{
     background-color: #F9FAFB;
     font-family: Heebo;
 }
 
 /*Banner and logo*/
-.section-one .logo-container{
+.left-section{
     width: 100vw;
     position: relative;
     display: flex;
@@ -59,56 +66,65 @@ body{
     align-items: center;
 }
 
-.logo-container #bg-image{
+
+.left-section #bg-image{
     width: 100vw;
     height: 25vh;
-    object-fit: cover;
     position: relative;
+    object-fit: cover;
 }
 
+.logo-container{
+    position: absolute;
+}
 
 .logo-container #odin-logo{
     width: 30vw;
-    position: absolute;
 }
 
 /*The odin text next to the logo will not show up on mobile devices*/
-.logo-container #logo-text{
+.logo-container  #logo-text{
     display: none; 
 }
 
-.logo-container .image-credit{
+
+.image-credit{
     position: absolute;
     bottom: 10px;
-    right: 0;
+    left: 0;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
 
+.image-credit span a{
+    color: white;
+}
+
+
 /*Section two- the form and sign-up button*/
 
-/*The introductory paragraph will be visible for pc users or users with
-devices with bigger screen, but not for mobile users*/
-
-.section-two .introduction{
+/*The introductory paragraph will not be visible for mobile users*/
+.right-section .introduction{
     display: none;
 }
 
-.section-two .introduction .introduction-par-1{
-}
-
-.section-two .introduction .introduction-par-2{
+.right-section .introduction .introduction-par-2{
     margin-top: 15px;
 }
 
-.section-two .form-container{
-    height: 75vh;
+.right-section .form-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 75vh;
+}
+
+.right-section .form-container p{
+    display: none;
 }
 
 .form-container div{
@@ -117,11 +133,13 @@ devices with bigger screen, but not for mobile users*/
 }
 
 .form-container div input{
-    border: 1px solid black;
-    border-radius: 10px;
-    outline: none;
-    padding: 10px;
+    width: 48vw;
+    height: 5vh;
     margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgb(180, 175, 175);
+    border-radius: 5px;
+    outline: none;
 }
 
 .form-container div input:focus{
@@ -129,15 +147,16 @@ devices with bigger screen, but not for mobile users*/
     box-shadow: 1px 1px rgb(129, 125, 125);
 }
 
-.form-container .sign-up-log-in{
-    margin-top: -15vh;
+.form-container .sign-up-log-in-section{
+    width: 500px;
+    margin-bottom: 25px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
-.form-container .sign-up-log-in button{
-    padding: 20px;
+.form-container .sign-up-log-in-section button{
+    padding: 15px;
     background-color: #596D48;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -145,14 +164,208 @@ devices with bigger screen, but not for mobile users*/
     border-radius: 10px;
 }
 
-.form-container .sign-up-log-in span{
-    font-size: 20px;
+.form-container .sign-up-log-in-section span{
     margin-top: 20px;
-    margin-left: 29px;   
+    margin-left: 30px;   
+    font-size: 18px;
 }
 
-.form-container .sign-up-log-in span a {
+.form-container .sign-up-log-in-section span a {
     color: #596D48;
     font-weight: bold;
     text-decoration: none;
 }
+
+@media screen and (min-width:587px) {
+    #odin-logo{
+        width: 25vw !important;
+        transition: .5s;
+    }
+
+
+}
+
+@media screen and (min-width:700px){
+    #odin-logo{
+        width: 20vw !important;
+        transition: .5s;
+    }
+}
+
+@media screen and (min-width:890px){
+    #odin-logo{
+        width: 15vw !important;
+        transition: .5s;
+    }   
+
+    .left-section{
+        position: relative;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #odin-logo{
+        width: 12vw !important;
+        transition: .5s;
+    }   
+
+}
+
+@media screen and (min-width: 1405px) {
+    .logo-container{
+        width: 100%;
+        top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.452);
+    }
+
+
+    .left-section{
+        width: 45vw;
+    }
+
+    .left-section #bg-image{
+        height: 100vh !important; 
+        max-width: 100% !important;
+    }
+
+    .left-section{
+        width: 40vw !important; 
+        height: 100vh;
+        position: relative;
+    }
+
+
+    #odin-logo{
+        width: 8rem !important;
+        top: 20%;
+        left: 30%;
+        transition: .5s;
+    }   
+
+    .logo-container #logo-text{
+        display: block; 
+        transition: .5s;
+        color: white;
+        font-family: nordic-font;
+        font-weight: bold;
+        font-size: 6rem;
+    }
+
+
+    .right-section{
+        width: 55vw;
+        height: 100vh;
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        position: absolute;
+        top:0;
+        left: 41%;
+        float: right;
+        background-color: #f9fafb;
+    }
+
+    .right-section .introduction{
+        display: block !important;
+        padding-left: 15px;
+        position: absolute;
+        left: 2vw;
+        top: 15vh;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .right-section .form-container{
+        width: 100%;
+    }
+
+    .right-section form{
+        width: 105%;
+        height: 50%;
+        margin-top: 10vh;
+        padding-left: 30px;
+        position: absolute;
+        top: 15vh;
+        left: -35px;
+    }
+
+    .right-section form div{
+        width: 14vw;
+        height: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+
+    .right-section .form-container p{
+        display: block;
+        position: absolute;
+        left: 2vw;
+        top: 22vh;        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .right-section form div input{
+        width: 12vw;
+        height: 3vh !important;
+        padding: 2px !important;
+    }
+
+    .right-section form div  label{
+        padding-bottom: 5px;
+        padding-left: 8px;
+    }
+
+    .first-name-container, .email-container, .password-container{
+        position: absolute;
+        left: 3.5vw;
+    }
+    
+    .last-name-container, .phone-container, .cpassword-container{
+        position: absolute;
+        right: 25vw;
+    }
+
+    .email-container, .phone-container{
+        margin-top: 100px !important;
+    }
+
+    .password-container ,.cpassword-container{
+        margin-top: 200px !important;
+
+    }
+
+    .sign-up-log-in-section{
+        width: 350px !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: absolute;
+        top: 55vh;
+        left: 2vw;
+    }
+
+    .form-container .sign-up-log-in-section button{
+        margin-left: -105px;
+        margin-right: 20px;
+        padding: 20px 60px;
+        font-size: 14px;
+        border: none;
+    }
+
+    .form-container .sign-up-log-in-section span{
+        margin-left: -50px;
+        margin-right: 45px;
+        padding-left: 10px;
+    }
+}
+
