@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
-    <script src="script,js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>  
     <title>Sign-up form</title>
 </head>
 <body>
@@ -59,12 +59,12 @@
             
                     <div class="password-container">
                         <label for="passwd">Password</label>
-                        <input type="password" id="passwd" class="passwd error" name="password" onchange="test()" required>    
+                        <input type="password" id="passwd" class="passwd error" name="password" onchange="checkPassword()" required>    
                     </div>
             
                     <div class="cpassword-container">
                         <label for="cpasswd">Confirm Password</label>
-                        <input type="password" id="cpasswd" onchange="test()">    
+                        <input type="password" id="cpasswd" onchange="checkPassword()">    
                     </div>
                 </form>
 
@@ -72,9 +72,7 @@
                     <button type="submit" form="signUpForm" id="createAccBtn">Create Account</button>
                     <span>Already have an account? <a href="">Log in.</a></span>    
                 </div>    
-    
             </div>
-
         </div>
     </div>
 </div>
