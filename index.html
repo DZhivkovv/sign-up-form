@@ -38,18 +38,18 @@
                 <p>Let's do this!</p>
                 <form action="" method="get" id="signUpForm">
                     <div class="first-name-container">
-                        <label for="firstName">First name</label>
-                        <input type="text" id="firstName" name="firstName">    
+                        <label for="firstName">*First name</label>
+                        <input type="text" id="firstName" name="firstName" required>    
                     </div>
             
                     <div class="last-name-container">
-                        <label for="lastName">Last name</label>
-                        <input type="text" id="lastName" name="lastName">    
+                        <label for="lastName">*Last name</label>
+                        <input type="text" id="lastName" name="lastName" required>    
                     </div>
             
                     <div class="email-container">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">                            
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" required>                            
                     </div>
             
                     <div class="phone-container">
@@ -58,13 +58,13 @@
                     </div>
             
                     <div class="password-container">
-                        <label for="passwd">Password</label>
+                        <label for="passwd">*Password</label>
                         <input type="password" id="passwd" class="passwd error" name="password" onchange="checkPassword()" required>    
                     </div>
             
                     <div class="cpassword-container">
-                        <label for="cpasswd">Confirm Password</label>
-                        <input type="password" id="cpasswd" onchange="checkPassword()">    
+                        <label for="cpasswd">*Confirm Password</label>
+                        <input type="password" id="cpasswd" onchange="checkPassword()" required>    
                     </div>
                 </form>
 

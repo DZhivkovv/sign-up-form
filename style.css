@@ -132,6 +132,10 @@ body{
     font-size: 24px;
 }
 
+.form-container div label{
+    font-weight: bold;
+}
+
 .form-container div input{
     width: 48vw;
     height: 5vh;
@@ -161,6 +165,7 @@ body{
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
+    border: none;
     border-radius: 10px;
 }
 
@@ -359,7 +364,6 @@ body{
         margin-right: 20px;
         padding: 20px 60px;
         font-size: 14px;
-        border: none;
     }
 
     .form-container .sign-up-log-in-section span{

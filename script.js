@@ -3,7 +3,8 @@ let confirmPswdContainer = document.querySelector('.cpassword-container');
 let confirmPswdField = document.querySelector('#cpasswd');
 let rightSection = document.querySelector('.right-section');
 
-var label = document.createElement("p");//Label that will be displayed when the password and confirm password values match
+var label = document.createElement("p");//Label that will be displayed when the password and confirm 
+//password values match or do not match
 
 
 let checkPassword = function(){
@@ -23,21 +24,20 @@ let checkPassword = function(){
             var text = document.createTextNode("Passwords match!");
             label.appendChild(text);
             label.style.color = '#596D48';
-            label.style.fontSize='18px'
+            label.style.fontSize='14px';
             label.style.position='absolute';
             label.style.top='70px';
             label.style.left='10px'
             
             confirmPswdContainer.appendChild(label); 
-            } 
-            else{
+            } else{
             passwordField.style.border = '2px solid rgb(255, 0, 0)';
             confirmPswdField.style.border = '2px solid rgb(255, 0, 0)';
 
             var text = document.createTextNode("Passwords do not match!");
             label.appendChild(text);
             label.style.color = 'rgb(255, 0, 0)';
-            label.style.fontSize='18px'
+            label.style.fontSize='14px';
             label.style.position='absolute';
             label.style.top='70px';
             label.style.left='10px'
