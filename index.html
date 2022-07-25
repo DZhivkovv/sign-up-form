@@ -59,12 +59,15 @@
             
                     <div class="password-container">
                         <label for="passwd">*Password</label>
-                        <input type="password" id="passwd" class="passwd error" name="password" onchange="checkPassword()" required>    
+                        <input type="password" id="passwd" class="passwd error" name="password" onchange="checkPassword()" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                        required >
                     </div>
+
             
                     <div class="cpassword-container">
                         <label for="cpasswd">*Confirm Password</label>
-                        <input type="password" id="cpasswd" onchange="checkPassword()" required>    
+                        <input type="password" id="cpasswd" onchange="checkPassword()" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                        required>    
                     </div>
                 </form>
 

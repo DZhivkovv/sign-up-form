@@ -151,6 +151,11 @@ body{
     box-shadow: 1px 1px rgb(129, 125, 125);
 }
 
+/* .form-container div input:invalid{
+    border: 2px solid rgba(247, 10, 10, 0.973);
+} */
+
+
 .form-container .sign-up-log-in-section{
     width: 500px;
     margin-bottom: 25px;
@@ -340,14 +345,15 @@ body{
         right: 25vw;
     }
 
+
     .email-container, .phone-container{
         margin-top: 100px !important;
     }
 
     .password-container ,.cpassword-container{
         margin-top: 200px !important;
-
     }
+
 
     .sign-up-log-in-section{
         width: 350px !important;
