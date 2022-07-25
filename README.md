@@ -1,9 +1,9 @@
 # Sign-up Form
 ## Desktop Version
-![How the signup form looks- Desktop version](https://imgur.com/feEOtPT)
+![How the signup form looks- Desktop version](Readme-images/Desktop.jpg)
 
 ## Mobile Version
-![How the signup form looks- Mobile version](https://imgur.com/3l1vfGA)
+![How the signup form looks- Mobile version](Readme-images/Mobile.jpg)
 
 ## About the form
 The form contains:
